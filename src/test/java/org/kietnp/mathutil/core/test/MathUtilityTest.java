@@ -17,11 +17,11 @@ public class MathUtilityTest {
     @Test
     public void testFactorialGivenRightArgumentRunsWell(){
         assertEquals(69, 69);
-        assertEquals( 1, MathUtility.getFactorial(1));
-        assertEquals( 2, MathUtility.getFactorial(2));
-        assertEquals( 6, MathUtility.getFactorial(3));
-        assertEquals( 24, MathUtility.getFactorial(4));
-        assertEquals( 120, MathUtility.getFactorial(5));
+        assertEquals( 1, MathUtility.getFactorialRecursion(1));
+        assertEquals( 2, MathUtility.getFactorialRecursion(2));
+        assertEquals( 6, MathUtility.getFactorialRecursion(3));
+        assertEquals( 24, MathUtility.getFactorialRecursion(4));
+        assertEquals( 120, MathUtility.getFactorialRecursion(5));
         
     }
     

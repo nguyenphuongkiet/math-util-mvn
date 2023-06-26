@@ -30,12 +30,12 @@ public class MathUtilityAdvancedTest {
     @ParameterizedTest
     @MethodSource("initTestData")
     public void testFactorialGivenRightArgumentRunsWell1(int n, long expected) {
-        assertEquals(1, getFactorial(0));
+        assertEquals(1, getFactorialRecursion(0));
     }
     
     @Test
     public void testFactorialGivenRightArgumentRunsWell() {
-        assertEquals(1, getFactorial(0));
+        assertEquals(1, getFactorialRecursion(0));
     }
     
     @Test
@@ -43,11 +43,11 @@ public class MathUtilityAdvancedTest {
         Executable gF = new Executable() {
             @Override
             public void execute() throws Throwable {
-                MathUtility.getFactorial(-1);
+                MathUtility.getFactorialRecursion(-1);
             }
         };
         //hàm thuộc về interface Executable
-        Executable gF2 = () -> MathUtility.getFactorial(-1);
+        Executable gF2 = () -> MathUtility.getFactorialRecursion(-1);
         
         assertThrows(IllegalArgumentException.class, gF2);
     }
