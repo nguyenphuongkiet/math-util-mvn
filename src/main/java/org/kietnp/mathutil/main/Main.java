@@ -22,31 +22,31 @@ public class Main {
         long expected = 1;
         long actual;
         //sau đó
-        actual = MathUtility.getFactorial(n);
+        actual = MathUtility.getFactorialRecursion(n);
         System.out.println(n + "! | expected: " + expected +
                                   " | actual: " + actual );
         
         //Testcase #2, check getF() with n = 1
         System.out.println("1! | expected: 1" +
-                                  " | actual: " + MathUtility.getFactorial(1) );
+                                  " | actual: " + MathUtility.getFactorialRecursion(1) );
         
         //Testcase #3, check getF() with n = 2
         System.out.println("2! | expected: 2" +
-                                  " | actual: " + MathUtility.getFactorial(2) );
+                                  " | actual: " + MathUtility.getFactorialRecursion(2) );
         
         //Testcase #4, check getF() with n = 4
         System.out.println("4! | expected: 24" +
-                                  " | actual: " + MathUtility.getFactorial(4) );
+                                  " | actual: " + MathUtility.getFactorialRecursion(4) );
         
         //Testcase #5, check getF() with n = 5
         System.out.println("5! | expected: 120" +
-                                  " | actual: " + MathUtility.getFactorial(5) );
+                                  " | actual: " + MathUtility.getFactorialRecursion(5) );
         
         //Testcase #6, check getF() with n = -1
         //Kì vọng trả về exception
         System.out.println("-1! | expected: Exception" +
                                   " | actual: ");
-        System.out.print(MathUtility.getFactorial(-1) );
+        System.out.print(MathUtility.getFactorialRecursion(-1) );
     }
     
     // TESTCASE và TEST DRIVEN DEVELOPMENT - TDD
