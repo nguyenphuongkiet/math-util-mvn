@@ -49,7 +49,7 @@ public class MathUtilityAdvancedTest {
         //hàm thuộc về interface Executable
         Executable gF2 = () -> MathUtility.getFactorialRecursion(-1);
         
-        assertThrows(IllegalArgumentException.class, gF2);
+        assertThrows(StackOverflowError.class, gF2);
     }
 
 }
